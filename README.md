@@ -9,11 +9,21 @@ Aplikacja posiada bazę przezkód lotniczych oraz rzeźby terenu. Wyszukuje najk
 Aplikacja wymaga dopracowania, jednakże swoją główną funkcjonalność spełnia.
 
 ## Screeny z alikacji:
+
+### Strona Główna | Menu Główne
+
 <img width="250" alt="Strona Główna" src="https://i.imgur.com/mWT9eNx.png"> <img width="250" alt="Menu Główne" src="https://i.imgur.com/CKzN8z8.png">
+
+### Przegląd przeszkód | Wybór współrzędnych
+Przegląd przeszkód z dołączonej bazy. Są to przeskzody lotnicze o wysokości 100m lub wyżej. Wybór współrzędnych z mapy, dla których wytyczona zostanie trasa.
 
 <img width="250" alt="Przegląd przeszkód" src="https://i.imgur.com/X2klSyp.png"> <img width="250" alt="Wybór współrzędnych" src="https://i.imgur.com/5xWZSo9.png">
 
+### Graf Ścieżek | Mapa z trasą | Wykres wysokości
+Prezentacja wyników działania algorytmu wyznaczania trasy. Prezentowana jest ona na trzy sposoby i w dwóch płaszczyznach - rzut z góry oraz przekrój trasy.
+
 <img width="250" alt="Graf ścieżek" src="https://i.imgur.com/sXTet6C.png"> <img width="250" alt="Mapa z trasą" src="https://i.imgur.com/hbhtAlO.png"> <img width="250" alt="Wykres wysokości" src="https://i.imgur.com/oYGpVef.png">
+
 
 ## Funkcje obecnie dostępne w aplikacji
 **Aplikacja - funkcje główne:**
