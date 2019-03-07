@@ -9,12 +9,9 @@ Aplikacja posiada bazę przezkód lotniczych oraz rzeźby terenu. Wyszukuje najk
 Aplikacja wymaga dopracowania, jednakże swoją główną funkcjonalność spełnia.
 
 ## Screeny z alikacji:
-<img width="250" alt="Strona Główna" src="https://i.imgur.com/FhwvYRp.png">
-<img width="250" alt="Wyszukiwarka" src="https://i.imgur.com/NDno5GR.png">
-<img width="250" alt="Menu Główne" src="https://i.imgur.com/ihTEcJ4.png">
-<img width="250" alt="Subskrybowane fora" src="https://i.imgur.com/o4twKi2.png">
-<img width="250" alt="Ustawienia postaci" src="https://i.imgur.com/X9zGHN6.png">
-
+<img width="250" alt="Strona Główna" src="https://i.imgur.com/mWT9eNx.png"> <img width="250" alt="Menu Główne" src="https://i.imgur.com/CKzN8z8.png">
+<img width="250" alt="Przegląd przeszkód" src="https://i.imgur.com/X2klSyp.png"> <img width="250" alt="Wybór współrzędnych" src="https://i.imgur.com/5xWZSo9.png">
+<img width="250" alt="Graf ścieżek" src="https://i.imgur.com/sXTet6C.png"> <img width="250" alt="Mapa z trasą" src="https://i.imgur.com/hbhtAlO.png"> <img width="250" alt="Wykres wysokości" src="https://i.imgur.com/oYGpVef.png">
 
 ## Funkcje obecnie dostępne w aplikacji
 **Aplikacja - funkcje główne:**
