@@ -10,7 +10,9 @@ Aplikacja wymaga dopracowania, jednakże swoją główną funkcjonalność speł
 
 ## Screeny z alikacji:
 <img width="250" alt="Strona Główna" src="https://i.imgur.com/mWT9eNx.png"> <img width="250" alt="Menu Główne" src="https://i.imgur.com/CKzN8z8.png">
+
 <img width="250" alt="Przegląd przeszkód" src="https://i.imgur.com/X2klSyp.png"> <img width="250" alt="Wybór współrzędnych" src="https://i.imgur.com/5xWZSo9.png">
+
 <img width="250" alt="Graf ścieżek" src="https://i.imgur.com/sXTet6C.png"> <img width="250" alt="Mapa z trasą" src="https://i.imgur.com/hbhtAlO.png"> <img width="250" alt="Wykres wysokości" src="https://i.imgur.com/oYGpVef.png">
 
 ## Funkcje obecnie dostępne w aplikacji
