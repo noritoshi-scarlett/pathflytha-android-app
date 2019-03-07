@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/maps_action_apply"
+        android:title="@string/maps_menuApply"
+        android:orderInCategory="100"
+        android:icon="@drawable/icon_apply_48"
+        android:enabled="false"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/maps_action_delete"
+        android:title="@string/maps_menuDelete"
+        android:orderInCategory="100"
+        android:icon="@drawable/icon_delete_48"
+        android:enabled="false"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/maps_action_info"
+        android:title="@string/maps_menuInfo"
+        android:orderInCategory="100"
+        android:icon="@drawable/icon_info_circle_48"
+        android:enabled="true"
+        app:showAsAction="ifRoom" />
+
+</menu>

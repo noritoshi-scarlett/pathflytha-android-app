@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorStatusBar</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textPrimary</item>
+        <item name="android:textColorTertiary">@color/textPrimary</item>
+        <item name="android:textColorLink">@color/textPrimary</item>
+        <item name="android:textColorHint">@color/textLink</item>
+
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="android:colorBackground">@color/backgroundBaseBlueLight</item>
+        <item name="android:colorForeground">@color/textPrimary</item>
+
+        <item name="android:statusBarColor">@color/colorStatusBar</item>
+        <item name="android:navigationBarColor">@color/colorNavigation</item>
+
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerItemStyle</item>
+    </style>
+
+    <!-- styl dla aktywnosci startowej - ScreenActivity -->
+    <style name="AppTheme.Fullscreen" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowBackground">@color/backgroundBaseBlueSemiLight</item>
+    </style>
+
+    <!-- styl dla aktywnosci glownej - MainActivity; MapsActivity -->
+    <style name="AppTheme.NoActionBar.DrawerStatus">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:colorPrimaryDark">@color/colorStatusBarMore</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
+    </style>
+
+    <!-- styl dla aktywnosci glownej - MainActivity; MapsActivity -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
+    </style>
+
+
+    <!-- Styl dla DialogAlertow - AlertDialog -->
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- samo Background sprawia, że zmienia się kolor i wymiar toolbara copy/paste na chujowy -->
+        <item name="android:background">@color/backgroundBaseBlue</item>
+        <item name="android:colorBackground">@color/backgroundBaseBlue</item>
+        <item name="android:textColor">@color/textLink</item>
+        <item name="android:textColorTertiary">@color/textPrimary</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+    </style>
+
+    <!-- styl dla przyciskow - Button -->
+    <style name="ButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="fontPath">fonts/Dosis-Light.ttf</item>
+        <item name="android:background">@color/buttonPrimaryNormal
+            <!--  @android:drawable/btn_default -> only way to change this is to change the src image -->
+        </item>
+    </style>
+
+    <!-- styl dla etykiet - TextView -->
+    <style name="AppTheme.Widget.TextView" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textColorLink">@color/textPrimaryWhite</item>
+        <item name="android:textColorSecondary">@color/textPrimary</item>
+        <item name="fontPath">fonts/Dosis-Light.ttf</item>
+    </style>
+
+    <!-- styl dla listy Spinnera - Spinner DropDown -->
+    <style name="SpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <!-- kolor tekstu w liscie rozwijanej -->
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="fontPath">fonts/Dosis-Light.ttf</item>
+    </style>
+
+</resources>

@@ -1,0 +1,60 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="pl.noritoshi_scarlett.pathflytha.fragments_main.ObstaclesListFragment"
+    android:fitsSystemWindows="true"
+    android:id="@+id/obsListLayout">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/obsListMapBar"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="4dp"
+            android:background="@color/colorStatusBar"
+            app:layout_scrollFlags="scroll|enterAlways|exitUntilCollapsed"
+            app:titleEnabled="false"
+            app:statusBarScrim="@null"
+            android:fitsSystemWindows="true">
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@+id/main_lay"
+                android:apiKey="@string/google_maps_key"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="true"
+                app:layout_collapseMode="parallax"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:numColumns="2"
+        app:layout_collapseMode="parallax"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fabBtnListObs"
+        android:src="@drawable/icon_hide_arrow_48"
+        app:layout_anchor="@id/obsListMapBar"
+        app:layout_anchorGravity="bottom|center_horizontal"
+        app:fabSize="mini"
+        app:backgroundTint="@color/s_fab_colors_teal"/>
+
+</android.support.design.widget.CoordinatorLayout>

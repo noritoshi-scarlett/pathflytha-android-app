@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="pl.noritoshi_scarlett.pathflytha.fragments_main.InfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="12dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:text="@string/main_info_desc" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:paddingTop="40dp"
+            android:letterSpacing="0.2"
+            android:textSize="16sp"
+            android:textColor="@color/textLink"
+            android:textAlignment="center"
+            android:text="@string/main_info_credits" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_gravity="bottom|end"
+        android:id="@+id/floatBtnSendEmail"
+        app:backgroundTint="@color/colorAppBar"
+        app:fabSize="normal"
+        app:borderWidth="1dp"
+        android:src="@drawable/icon_email_48"/>
+
+</FrameLayout>

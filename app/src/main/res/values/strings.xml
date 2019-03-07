@@ -1,0 +1,135 @@
+<resources>
+
+    <!-- nazwy ogólne -->
+    <string name="app_name">Pathflytha</string>
+    <string name="app_desc">Aplikacja oferująca możliwość wyliczania trasy przelotu dla obiektu latającego z uwzględnianiem przeszkód trójwymiarowych</string>
+
+    <!-- nazwy aktywnosci -->
+    <string name="title_activity_screen">Ładowanie</string>
+    <string name="title_activity_main">Pathflytha</string>
+    <string name="title_activity_maps">Wybór współrzędnych</string>
+    <string name="title_activity_calculate">Obliczanie trasy</string>
+
+    <!-- nazwy uzywane w aktywnościach -->
+    <!-- MainActivity -->
+    <string name="main_bar_title">Pathflytha</string>
+    <string name="main_bar_subtitle_settings">Preferencje</string>
+    <string name="main_bar_subtitle_info">Informacje</string>
+
+    <string name="main_drawer_menu_geting_data">Przygotowanie lotu</string>
+    <string name="main_drawer_menu_patches">Zapisane trasy lotu</string>
+    <string name="main_drawer_menu_obstacles">Baza przeszkód</string>
+    <string name="main_drawer_menu_weather">Warunki pogodowe</string>
+    <string name="main_drawer_menu_settings">Ustawienia</string>
+    <string name="main_drawer_menu_info">O Autorze</string>
+
+    <string name="touchForClose">Naciśnij raz jeszcze, aby zamknąć aplikację</string>
+
+    <string name="main_menuSettings">Ustawienia</string>
+    <string name="main_menuInfo">Informacje</string>
+
+    <!-- ChooseFragment -->
+    <string name="main_pickCoordinates">Wybór współrzędnych</string>
+    <string name="main_pickCoordinatesDesc">Kliknij powyższy przycisk, aby wybrać współrzędne ścieżki startowej i ścieżki podejścia do lądowania.</string>
+    <string name="main_pickCoordinatesPickedTitle">Wybrane współrzędne:</string>
+    <string name="main_pickCoordinatesPickedData1">Punkt startowy:</string>
+    <string name="main_pickCoordinatesPickedData2">Punkt wyjścia:</string>
+    <string name="main_pickCoordinatesPickedData3">Punkt wejścia:</string>
+    <string name="main_pickCoordinatesPickedData4">Punkt końcowy:</string>
+
+    <string name="main_selectLongitude">Długość geograficzna:</string>
+    <string name="main_selectLatitude">Szerokość geograficzna:</string>
+
+    <string name="main_selectObjectTpe">Wybierz rodzaj samolotu:</string>
+    <string name="main_selectLicenseTpe">Wybierz zakres lotu:</string>
+    <string name="main_selectCalculateTpe">Wybierz sposób wyznaczania trasy:</string>
+
+    <string name="main_inputFlyNormal">Preferowana wysokosć lotu (bezwzględna)</string>
+
+    <array name="main_arrayObjectType">
+        <item>Jednosilnikowy tłokowy</item>
+        <item>Dwusilnikowy tłokowy</item>
+    </array>
+
+    <array name="main_arrayLicenseType">
+        <item>Lot niekontrolowany (przelot poza strefami)</item>
+        <item>Lot kontrolowany, z pominięciem klasy C</item>
+    </array>
+
+    <array name="main_arrayCalculateType">
+        <item>Pełe wyzaczanie najkrótszej trasy</item>
+        <item>Omijanie przeszkód na wskazanym odcinku</item>
+    </array>
+
+    <!-- ObstaclesListFragments -->
+    <string name="main_obstacles_is_loaded">Załadowano listę obiektów</string>
+
+    <!-- InfoFragment -->
+    <string name="main_info_desc">Aplikacja Patchflytha została wykonana w ramach pracy dypomowej \„Wytyczanie trasy dla obiektów latających z uwzględnieniem przeszkód trójwymiarowych\".</string>
+    <string name="main_info_credits"><![CDATA[Noritoshi & Scarlett © 2019]]></string>
+    <string name="main_info_email">kamil.balu@gmail.com</string>
+    <string name="main_info_subject">Pathflytha App</string>
+    <string name="main_info_email_sending">Wyślij mail z zapytaniem o aplikację:</string>
+
+    <!-- MapsActivity-->
+    <string name="maps_menuInfo">Informacje</string>
+    <string name="maps_menuApply">Zaakceptuj punkty</string>
+    <string name="maps_menuDelete">Skasuj bieżący punkt</string>
+    <string name="maps_menuHideTab">Ukryj współrzędne</string>
+    <string name="maps_menuShowTab">Pokaż współrzędne</string>
+
+    <string name="maps_infoTitle">Współrzędne geograficzne</string>
+    <string name="maps_infoDesc">Mapy Google wyświetlają współrzędne geograficzne w układzie WGS84.\n\nKliknięty na mapie punkt automatycznie zostanie oznaczony markerem wskazanym uprzednio na górnej zakładce, a jego współrzędne zostają wyświetlone i zapisane w formacie stopni oraz w formacie dziesiętnym.\nMożna także samodzielnie wpisać dane punktów (tylko w formacie dziesiętnym) w odpowiednie pola, pojawiające się po rozwinięciu zakładek.\nWybrane już punkty można zastępować nowymi.\nPo wybraniu obu punktów, możliwy będzie powrót do poprzedniego ekranu wraz z przekazaniem wybranych współrzędnych.
+</string>
+    <string name="maps_infoClose">Zamknij</string>
+    <string name="maps_startCoordinatesTitle">Punkt startowy</string>
+    <string name="maps_start_out_CoordinatesTitle">Punkt wyjścia</string>
+    <string name="maps_end_target_CoordinatesTitle">Punkt wejścia</string>
+    <string name="maps_endCoordinatesTitle">Punkt końcowy</string>
+    <string name="maps_errorOfPoint">Błędne dane</string>
+    <string name="maps_writeLongitude">Długość</string>
+    <string name="maps_writeLatitude">Szerokość</string>
+
+    <!-- CalculateActivity-->
+    <string name="calc_chartGraph">Graf  ścieżek</string>
+    <string name="calc_chartMapView">Ścieżka na mapie</string>
+    <string name="calc_chartHeight">Wykres wysokości</string>
+    <string-array name="calc_legend_graph">
+        <item>.  Omijana przeszkoda</item>     <!--  0 -->
+        <item>.  Pobliska przeszkoda</item>    <!--  1 -->
+        <item>O Okrąg wokół przeszkody</item> <!--  2 -->
+        <item>O Okrąg wejścia/wyjścia</item>  <!--  3 -->
+        <item>/ Obejście poziome</item>       <!--  4 -->
+        <item>/ Obejście pionowe</item>       <!--  5 -->
+        <item>/ Obejście niedozwolone</item>  <!--  6 -->
+        <item>/ Najkrótszy dystans</item>     <!--  7 -->
+        <item>/ Znaleziona droga</item>       <!--  8 -->
+        <item>.  Punkty startu/końca</item>    <!--  9 -->
+        <item>.  Punkty wejścia/wyjścia</item> <!-- 10 -->
+        <item>.  Przeszkoda zbyt niska</item>  <!--  11 -->
+        <item>.  Przeszkoda zbyt odlegla</item><!--  12 -->
+        <item>O Okrąg tylko do poziom. obej</item><!--  13 -->
+
+    </string-array>
+    <string-array name="calc_legend_height">
+        <item>| Omijana przeszkoda</item>     <!--  0 -->
+        <item>| Pobliska przeszkoda</item>    <!--  1 -->
+        <item>/ Teren</item>                  <!--  2 -->
+        <item>/ Linia lotu</item>             <!--  3 -->
+        <item>.  Punkty startu/końca</item>    <!--  4 -->
+        <item>.  Punkty wejścia/wyjścia</item> <!--  5 -->
+    </string-array>
+
+    <!-- PreferenceFramgnet strings -->
+    <string name="preferences_title">Ustawienia Lotu</string>
+    <string name="preference_text_minDistanceFromTerrain">Minimalna wysokośc lotu nad powierzchnią</string>
+    <string name="preference_text_minDistanceFromTerrain_desc">Określa minimalną odległość od terenu, uwzględniając uśrednioną wysokość w punkcie pokrywającym się z torem lotu.</string>
+    <string name="preference_text_minDistanceFromObstacle">Minimalna odległość przelotu od przeszkody</string>
+    <string name="preference_text_minDistanceFromObstacle_desc">Określa minimalną poziomą odległość przelotu w pobliżu przeszkody.</string>
+    <string name="preference_text_minDistanceOverObstacle">Minimalna wysokość lotu nad przeszkodą</string>
+    <string name="preference_text_minDistanceOverObstacle_desc">Określa minimalną odległość od szczytu przeszkody, nad która lub w pobliżu której prowadzi tor lotu.</string>
+    <string name="preference_text_maxDistanceOver">Miaksymalna wysokość lotu</string>
+    <string name="preference_text_maxDistanceOver_desc">Określa maksmalną wysokosć lotu</string>
+    <string name="preference_version_app_title">Wersja aplikacji:</string>
+
+</resources>

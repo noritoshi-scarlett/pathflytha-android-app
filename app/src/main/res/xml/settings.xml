@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+<PreferenceCategory
+    android:title="@string/preferences_title">
+
+    <EditTextPreference
+        android:key="preference_minDistanceFromTerrain"
+        android:title="@string/preference_text_minDistanceFromTerrain"
+        android:dialogMessage="@string/preference_text_minDistanceFromTerrain_desc"
+        android:inputType="number"
+        android:defaultValue="100"/>
+
+    <EditTextPreference
+        android:key="preference_minDistanceFromObstacle"
+        android:title="@string/preference_text_minDistanceFromObstacle"
+        android:dialogMessage="@string/preference_text_minDistanceFromObstacle_desc"
+        android:inputType="number"
+        android:defaultValue="50"/>
+
+    <EditTextPreference
+        android:key="preference_minDistanceOverObstacle"
+        android:title="@string/preference_text_minDistanceOverObstacle"
+        android:dialogMessage="@string/preference_text_minDistanceOverObstacle_desc"
+        android:inputType="number"
+        android:defaultValue="200"/>
+
+    <EditTextPreference
+        android:key="preference_maxDistanceOver"
+        android:title="@string/preference_text_maxDistanceOver"
+        android:dialogMessage="@string/preference_text_maxDistanceOver_desc"
+        android:inputType="number"
+        android:defaultValue="10000"/>
+
+    <Preference
+        android:icon="@drawable/icon_app_logo_48"
+        android:key="preference_version_app"
+        android:enabled="false"
+        android:title="@string/preference_version_app_title"
+        android:defaultValue="unkown"/>
+
+</PreferenceCategory>
+
+</PreferenceScreen>

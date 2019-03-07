@@ -1,0 +1,52 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="pl.noritoshi_scarlett.pathflytha.fragments_main.WeatherFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="0dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="12dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bitmap"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:id="@+id/recyclerView"
+                android:choiceMode="singleChoice"
+                android:isScrollContainer="false"
+                android:numColumns="1"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_gravity="bottom|end"
+            android:id="@+id/floatBtnAdd"
+            app:backgroundTint="@color/s_fab_colors_teal"
+            app:fabSize="normal"
+            app:borderWidth="1dp"
+            android:src="@drawable/icon_delete_48"/>
+
+    </FrameLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

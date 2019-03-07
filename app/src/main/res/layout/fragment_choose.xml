@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSelectCoordinates"
+            android:layout_marginTop="20dp"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+            android:text="@string/main_pickCoordinates"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingTop="2dp"
+            android:paddingBottom="6dp"
+            android:textSize="12sp"
+            android:text="@string/main_pickCoordinatesDesc"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layoutPickedCoordinates">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPickedCoordinatesTitle"
+                android:paddingTop="2dp"
+                android:paddingBottom="4dp"
+                android:textSize="18sp"
+                android:text="@string/main_pickCoordinatesPickedTitle"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="24dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="6dp"
+                android:id="@+id/txtPickedCoordinates"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="18sp"
+            android:text="@string/main_selectObjectTpe"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/icon_hide_arrow_48"
+                android:tint="@color/textLink"
+                android:rotation="90"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:padding="5dp"
+                android:id="@+id/spinnerObjectType" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="18sp"
+            android:text="@string/main_selectLicenseTpe"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/icon_hide_arrow_48"
+                android:tint="@color/textLink"
+                android:rotation="90"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:padding="5dp"
+                android:id="@+id/spinnerLicenseType" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="18sp"
+            android:text="@string/main_selectCalculateTpe"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/icon_hide_arrow_48"
+                android:tint="@color/textLink"
+                android:rotation="90"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:padding="5dp"
+                android:id="@+id/spinnerCalculateType" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/main_inputFlyNormal"
+                android:id="@+id/inputFlyNormal"
+                android:text="600"
+                android:inputType="numberDecimal"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_gravity="bottom|end"
+        android:id="@+id/floatBtnCalculateIt"
+        app:backgroundTint="@color/colorAppBar"
+        app:fabSize="normal"
+        app:borderWidth="1dp"
+        android:src="@drawable/icon_paperplane_48"/>
+
+</FrameLayout>

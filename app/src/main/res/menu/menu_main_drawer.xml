@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_item_geting_data"
+            android:icon="@drawable/icon_choose_48"
+            android:title="@string/main_drawer_menu_geting_data"
+            android:checked="true"
+            android:checkable="true"/>
+        <item
+            android:id="@+id/navigation_item_patches"
+            android:icon="@drawable/icon_patches_48"
+            android:title="@string/main_drawer_menu_patches"
+            android:checked="false"
+            android:checkable="true"/>
+        <item
+            android:id="@+id/navigation_item_obstacles"
+            android:icon="@drawable/icon_db_search_48"
+            android:title="@string/main_drawer_menu_obstacles"
+            android:checked="false"
+            android:checkable="true"/>
+        <item
+            android:id="@+id/navigation_item_settings"
+            android:icon="@drawable/icon_paperplane_48"
+            android:title="@string/main_bar_subtitle_settings"
+            android:checked="false"
+            android:checkable="true"/>
+        <item
+            android:id="@+id/navigation_item_info"
+            android:icon="@drawable/icon_info_circle_48"
+            android:title="@string/main_drawer_menu_info"
+            android:checked="false"
+            android:checkable="true"/>
+    </group>
+
+</menu>

@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="pl.noritoshi_scarlett.pathflytha.fragments_maps.PageMapsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layoutLongitude">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:inputType="numberSigned|numberDecimal"
+                android:singleLine="true"
+                android:minWidth="120dp"
+                android:id="@+id/editLongitude"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:hint="@string/maps_writeLongitude" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:inputType="numberSigned|numberDecimal"
+                android:textSize="14dp"
+                android:singleLine="true"
+                android:minWidth="120dp"
+                android:id="@+id/editLatitude"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:hint="@string/maps_writeLatitude" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layoutLongitude">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:id="@+id/txtLongitude"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:id="@+id/txtLalitude"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

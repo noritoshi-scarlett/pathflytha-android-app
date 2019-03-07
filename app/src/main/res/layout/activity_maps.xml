@@ -1,0 +1,76 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="pl.noritoshi_scarlett.pathflytha.activities.MapsActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="false"
+    android:animateLayoutChanges="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/barLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:background="@color/colorAppBar"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabMode="fixed" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/barLayout"
+            android:id="@+id/layoutViewPager">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:background="@color/backgroundBaseBlueLight" />
+
+        </LinearLayout>
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layoutViewPager"
+            android:layout_above="@id/bottomNavigation"
+            android:apiKey="@string/google_maps_key"
+            android:animateLayoutChanges="true"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true"/>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/menu_maps_tools"
+            app:itemBackground="@color/backgroundBaseBlueLight"
+            app:itemIconTint="@drawable/selector_bottom_navigation"
+            app:itemTextColor="@drawable/selector_bottom_navigation" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- podstawowe -->
+    <color name="colorPrimary">#145363</color>
+    <color name="colorPrimaryDark">#d1d2e9</color>
+    <color name="colorAccent">#cb1727</color>
+    <color name="colorStatusBar">#63a2bc</color>
+    <color name="colorStatusBarMore">#59c4f1</color>
+    <color name="colorAppBar">#3389a2</color>
+    <color name="colorNavigation">#1e4956</color>
+
+    <!-- tekst -->
+    <color name="textPrimaryWhite">#ff0</color>
+    <color name="textPrimary">#fff</color>
+    <color name="textLink">#d0e2e2</color>
+    <color name="textGray">#aaa</color>
+    <color name="textMoreGray">#667783</color>
+    <color name="transparentTextLink">#33d0e2e2</color>
+
+    <!-- tlo -->
+    <color name="backgroundBaseBlue">#145363</color>
+    <color name="backgroundBaseBlueLight">#337387</color>
+    <color name="backgroundBaseBlueSemiLight">#266070</color>
+
+    <!-- przyciski -->
+    <color name="buttonPrimaryNormal">#337387</color>
+    <color name="buttonPrimaryActive">#ab1222</color>
+    <color name="buttonPrimaryActiveFocus">#cb1727</color>
+    <color name="buttonPrimaryDisabled">#123343</color>
+    <color name="buttonPrimaryTransparent">#bb337387</color>
+    <color name="transparentButtonPrimaryNormal">#99337387</color>
+
+    <!-- inne -->
+    <color name="graph_green">#33aa55</color>
+    <color name="graph_red">#dd1727</color>
+    <color name="graph_dark_red">#84161f</color>
+    <color name="graph_grey">#AAA</color>
+    <color name="graph_dark_grey">#777</color>
+    <color name="graph_black">#333</color>
+    <color name="graph_yellow">#f5d235</color>
+    <color name="graph_blue">#5555dd</color>
+    <color name="graph_white">#fff</color>
+
+    <!-- przezroczyste -->
+    <color name="transparent">#00000000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="transparentBackgroundBaseBlueLight">#60237387</color>
+    <color name="transparentMegaDark">#CC000010</color>
+
+</resources>
